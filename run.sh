@@ -13,7 +13,7 @@ set -euo pipefail
 ROOT="D:/project/rakuten"
 BACKEND="$ROOT/backend"
 FRONTEND="$ROOT/frontend"
-VENV="$BACKEND/vnev/Scripts"
+VENV="$BACKEND/venv/Scripts"
 PYTHON="$VENV/python.exe"
 PIP="$VENV/pip.exe"
 CELERY="$VENV/celery.exe"
@@ -144,7 +144,7 @@ echo "[Step 0] Checking prerequisites..."
 
 if [ ! -f "$PYTHON" ]; then
     fail "Python venv not found at $VENV"
-    fail "Run: python -m venv $BACKEND/vnev"
+    fail "Run: python -m venv $BACKEND/venv"
     exit 1
 fi
 ok "Python venv"

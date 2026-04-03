@@ -10,7 +10,7 @@ setlocal enabledelayedexpansion
 set "ROOT=D:\project\rakuten"
 set "BACKEND=%ROOT%\backend"
 set "FRONTEND=%ROOT%\frontend"
-set "VENV=%BACKEND%\vnev\Scripts"
+set "VENV=%BACKEND%\venv\Scripts"
 
 :: Colors via labels
 set "OK=[32m OK [0m"
@@ -32,7 +32,7 @@ echo [Step 0] Checking prerequisites...
 :: Check Python venv
 if not exist "%VENV%\python.exe" (
     echo %ERR% Python venv not found at %VENV%
-    echo        Run: python -m venv %BACKEND%\vnev
+    echo        Run: python -m venv %BACKEND%\venv
     goto :error
 )
 echo   %OK% Python venv found

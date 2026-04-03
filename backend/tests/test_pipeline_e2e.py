@@ -18,7 +18,7 @@ This script:
 
 Usage:
     cd D:\\project\\rakuten\\backend
-    source vnev/Scripts/activate
+    source venv/Scripts/activate
 
     # Quick test (10 products):
     python tests/test_pipeline_e2e.py

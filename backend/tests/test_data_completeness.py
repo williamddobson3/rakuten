@@ -31,7 +31,7 @@ requested by the client is being correctly collected across the 3-stage pipeline
 
 Usage:
     cd D:\\project\\rakuten\\backend
-    source vnev/Scripts/activate
+    source venv/Scripts/activate
     python tests/test_data_completeness.py
 
     Or with pytest:
